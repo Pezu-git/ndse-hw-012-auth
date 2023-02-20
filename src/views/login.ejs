@@ -1,0 +1,25 @@
+<div>
+    <form action="/login" method="post">
+        <div>
+            <label>Логин</label>
+            <input type="text" name="username" /><br />
+        </div>
+        <div>
+            <label>Пароль</label>
+            <input type="password" name="password" /><br />
+        </div>
+        </div>
+        <div>
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+    <a href="/signup">Регистрация</a>
+    
+    <div class="error_container">
+        <% const m=getMessages() %>
+        <% if (m.error) { %>
+         <%= m.error %>
+        <% } %>
+    </div>
+						
+</div>
